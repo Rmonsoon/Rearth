@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Map" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8"/>
+    <title>eaRth</title>
+    <meta itemprop="name"                                      content="ea_R_th"/>
+    <meta itemprop="description"     name="description"        content="Animation of vector data"/>
+    <meta itemprop="author"          name="author"             content="ea_R_th"/>
+    <meta property="og:type"        content="Animation"/>
+    <meta property="og:title"       content="eaRth"/>
+    <meta property="og:description" content="Component for visualization of vector data."/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+
+</head>
+<body data-lang="en">
+
+    <div id="display">
+        <svg id="map" class="fill-screen" xmlns="A1" version="1.1"></svg>
+        <canvas id="animation" class="fill-screen"></canvas>
+        <canvas id="overlay" class="fill-screen"></canvas>
+        <svg id="foreground" class="fill-screen" xmlns="A1" version="1.1"></svg>
+    </div>
+
+    <div id="details">
+        <p id="status"></p> 
+        <div id="location">
+            <p>
+                <span id="location-coord"></span>
+                <span id="location-close" class="invisible text-button"> ✕ </span>
+            </p>
+            <p>
+                <span id="location-wind"></span>
+                <span id="location-wind-units" class="text-button"></span>
+            </p>
+            <p>
+                <span id="location-value"></span>
+                <span id="location-value-units" class="text-button"></span>
+            </p>
+        </div>
+
+        <p id="earth">
+            <span id="show-menu" class="text-button" title="menu">Info</span>
+            <span id="progress" class="invisible"></span>
+        </p>
+
+        <div id="menu" class="invisible">
+            <p>Date | <span
+                id="data-date" class="local"></span> 
+            </p>
+            <p><span id="scale-label">Scale | </span><canvas id="scale"></canvas></p>
+			<!--
+            <p class="ocean-mode invisible">Animate | <span
+                class="text-button" id="animate-currents" title="Currents">Currents</span>
+            </p>
+            <p class="ocean-mode invisible">Overlay | <span
+                class="text-button" id="overlay-ocean-off">None</span> – <span
+                class="text-button" id="overlay-currents" title="Currents">Currents</span>
+            </p>
+            <p class="ocean-mode invisible"><span style="visibility:hidden">Overlay</span> |</p>
+			-->
+            <p>Projection | <span
+                class="proj text-button" id="atlantis" title="Atlantis">A</span> – <span
+                class="proj text-button" id="azimuthal_equidistant" title="Azimuthal Equidistant">AE</span> – <span
+                class="proj text-button" id="conic_equidistant" title="Conic Equidistant">CE</span> – <span
+                class="proj text-button" id="equirectangular" title="Equirectangular">E</span> – <span
+                class="proj text-button" id="orthographic" title="Orthographic">O</span> – <span
+                class="proj text-button" id="stereographic" title="Stereographic">S</span> – <span
+                class="proj text-button" id="waterman" title="Waterman Butterfly">WB</span> – <span
+                class="proj text-button" id="winkel3" title="Winkel Tripel">W3</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="lib/underscore.js/1.6.0/underscore.js" charset="utf-8"></script>
+    <script src="lib/backbone.js/1.1.0/backbone.js" charset="utf-8"></script>
+    <script src="lib/topojson/1.1.0/topojson.js" charset="utf-8"></script>
+    <script src="lib/d3/3.3.10/d3.js" charset="utf-8"></script>
+
+    <script src="lib/d3.geo/0.0.0/d3.geo.projection.v0.min.js" charset="utf-8"></script>
+    <script src="lib/d3.geo/0.0.0/d3.geo.polyhedron.v0.min.js" charset="utf-8"></script>
+    <script src="lib/when/2.6.0/when.js" charset="utf-8"></script>
+
+    <script src="lib/earth/1.0.0/micro.js" charset="utf-8"></script>
+    <script src="lib/earth/1.0.0/globes.js" charset="utf-8"></script>
+    <script src="lib/earth/1.0.0/products.js" charset="utf-8"></script>
+    <script src="lib/earth/1.0.0/earth.js" charset="utf-8"></script>
+
+</body>
+</html>

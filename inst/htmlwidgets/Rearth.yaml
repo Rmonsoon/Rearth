@@ -1,0 +1,15 @@
+# (uncomment to add a dependency)
+# dependencies:
+#  - name:
+#    version:
+#    src:
+#    script:
+#    stylesheet:
+meta:
+  - charset: utf-8
+dependencies:
+  - name: index
+    version: 1.0.0
+    src: htmlwidgets
+    script: earth_index.html
+    stylesheet: styles/styles.css
