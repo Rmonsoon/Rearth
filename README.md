@@ -8,6 +8,10 @@ Example
 devtools::install_github("Rmonsoon/Rearth")
 library(Rearth)
 setwd(system.file("external", package="Rearth"))
+
 Rearth("orthographic=145,35,1800", mode="ocean", fn="ocean-currents.json")
+
+Rearth("orthographic=-90,40,1000", fn="surface-winds.json")
 ```
 
+![Ocean Currents](vignettes/ocean-currents_05.gif)
