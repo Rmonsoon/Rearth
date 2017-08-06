@@ -6,7 +6,9 @@ Example
 
 ``` r
 devtools::install_github("Rmonsoon/Rearth")
+
 library(Rearth)
+
 setwd(system.file("external", package="Rearth"))
 
 Rearth("orthographic=145,35,1800", mode="ocean", fn="ocean-currents.json")
@@ -14,4 +16,14 @@ Rearth("orthographic=145,35,1800", mode="ocean", fn="ocean-currents.json")
 Rearth("orthographic=-90,40,1000", fn="surface-winds.json")
 ```
 
+Then the Rearth widget will open in your brower.
+
 ![Ocean Currents](vignettes/ocean-currents_05.gif)
+
+Another example.
+
+``` r
+Rearth("orthographic=-90,40,1000", fn="surface-winds.json")
+```
+
+![Surface Winds](vignettes/surface-winds_02.gif)
