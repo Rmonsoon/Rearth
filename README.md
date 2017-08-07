@@ -29,7 +29,13 @@ Then the "Rearth" widget will be opened in your brower.
 Another example for surface winds.
 
 ``` r
-Rearth("orthographic=-90,40,1000", fn="surface-winds.json")
+Rearth("orthographic=-30,55,1500", fn="surface-winds.json")
 ```
 
 ![Surface Winds](vignettes/surface-winds_02.gif)
+
+
+Inspiration
+------------
+
+The awesome site [earth] (https://earth.nullschool.net/) and [yihui/recharts](https://github.com/yihui/recharts) provided the main inspiration for this project.
