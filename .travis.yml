@@ -1,0 +1,15 @@
+language: r
+
+os:
+ - window
+
+repos:
+  CRAN: https://cran.rstudio.com
+  
+warnings_are_errors: false
+
+sudo: required
+
+notifications:
+ email:
+on_failure: change
