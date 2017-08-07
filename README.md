@@ -38,4 +38,4 @@ Rearth("orthographic=-30,55,1500", fn="surface-winds.json")
 Inspiration
 ------------
 
-The awesome site [earth](https://earth.nullschool.net/) and the [yihui/recharts](https://github.com/yihui/recharts) project provided the main inspiration for this work.
+The awesome [earth site](https://earth.nullschool.net/) and the Yihui's [recharts project](https://github.com/yihui/recharts) provided the main inspiration for this work.
