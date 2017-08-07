@@ -26,7 +26,7 @@ Then the "Rearth" widget will be opened in your brower.
 ![Surface Winds](vignettes/surface-winds_02.gif)
 
 
-Another example for surface winds.
+Another example for ocean currents.
 
 ``` r
 Rearth("orthographic=145,35,1800", mode="ocean", fn="ocean-currents.json")
