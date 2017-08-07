@@ -18,22 +18,21 @@ Example
 library(Rearth)
 setwd(system.file("external", package="Rearth"))
 
-Rearth("orthographic=145,35,1800", mode="ocean", fn="ocean-currents.json")
+Rearth("orthographic=-30,55,1500", fn="surface-winds.json")
 ```
 
 Then the "Rearth" widget will be opened in your brower.
 
-![Ocean Currents](vignettes/ocean-currents_05.gif)
+![Surface Winds](vignettes/surface-winds_02.gif)
 
 
 Another example for surface winds.
 
 ``` r
-Rearth("orthographic=-30,55,1500", fn="surface-winds.json")
+Rearth("orthographic=145,35,1800", mode="ocean", fn="ocean-currents.json")
 ```
 
-![Surface Winds](vignettes/surface-winds_02.gif)
-
+![Ocean Currents](vignettes/ocean-currents_05.gif)
 
 Inspiration
 ------------
