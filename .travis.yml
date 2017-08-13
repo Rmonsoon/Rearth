@@ -3,13 +3,10 @@ language: r
 os:
  - window
 
-repos:
-  CRAN: https://cran.rstudio.com
-  
 warnings_are_errors: false
 
-sudo: required
+sudo: false
 
 notifications:
- email:
+ email: luoming2017@gmail.com
 on_failure: change
