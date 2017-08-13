@@ -1,3 +1,8 @@
+
+
+[![Travis-CI Build Status](https://travis-ci.org/Rmonsoon/Rearth.svg?branch=master)](https://travis-ci.org/Rmonsoon/Rearth)
+
+
 # Rearth
 A R html-widget for visualization of global weather conditions or other spatial vector data. 
 
